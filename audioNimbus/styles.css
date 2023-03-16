@@ -1,0 +1,58 @@
+body{
+    background-image: url('./pexels-little-visuals-1755.jpg');
+}
+
+.fluid-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+}
+#profile-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.col{
+    background-color: rgb(255, 132, 0);
+    width: 100%;
+
+}
+
+#timeline{
+    background-color: blueviolet;
+
+}
+
+#info{
+    background-color: rgb(255, 244, 127);
+
+}
+
+.favorites{
+    list-style: none;
+}
+
+.songTitle{
+    margin-right: 5px;
+}
+
+#uploadButton {
+    margin: 10px;
+    float: right;
+}
+
+#side-section{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    align-self: flex-end;
+    flex-direction: column;
+    background-color: rgb(255, 132, 0);
+}
+

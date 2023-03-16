@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Nimbus</title>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/5f275b4cf8.js" crossorigin="anonymous"></script>
+    
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="fluid-container">
+
+        <section id="header-section">
+            <h2 style="color: aliceblue; margin: 10px;">
+                Audio Nimbus
+            </h2>
+            <div id="profile" class="row">
+                <div class="col-9"><img id="profile-picture" src="./audionimbus.jpg" alt="picture of cloud"></div>
+                <div class="col">Welcome To Audio Nimbus! Upload your homemade or favorite tracks to this beta audio streaming service! Brought to you by your friendly neighborhood web developer intern, Audio Nimbus was carefully crafted from a passion of the music and streaming service industry. This is only the beginning for AudioNimbus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod iste porro laboriosam velit officia voluptatibus eius facilis omnis ex reiciendis vel quaerat quasi reprehenderit eum magni quas, molestiae amet?</div>
+            </div>
+            <!--Upload Audio Modal Code -->
+            <button id="uploadButton" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                Upload Audio
+            </button>
+            <!--Upload Modal -->
+            <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="uploadModalLabel">Upload New Audio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <!--Form to upload audio-->
+                        <!-- <form>
+                            <label>Title<br/>
+                                <input type='text' class="song-title" placeholder="Song Title">
+                           </label>
+                            <label>Upload Song Image:<br />
+                               <input type='file' accept="image/*" class="song-img"placeholder="">
+                            </label>
+                            <label>Upload Audio:<br />
+                               <input type='file' accept="audio/*" placeholder="" class="song-audio">
+                            </label>
+                        </form> -->
+                    <!--End Form to upload audio-->
+                    </div>
+                    <div class="modal-footer">
+                    <button id="modal-close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--End Upload Modal -->
+        </section>
+
+        <section id="song-section">
+            <div class="card"></div>
+            <ul id="main-song-list" class="list-group list-group-flush">
+                <!--append here-->
+            </ul>
+        </section>
+
+        <section id="side-section">
+            <h3 style="color: aliceblue; margin: 10px;">
+                Favorites
+            </h3>
+            <ul id="favorites" class="favorites list-group list-group-flush">
+                
+            </ul>
+        </section>
+
+    </div>
+
+    <!--<div class="form">
+        <form>
+            <label>Title<br/>
+                <input type='text' class="song-title" placeholder="Song Title">
+           </label>
+            <label>Upload Song Image:<br />
+               <input type='file' accept="image/*" class="song-img"placeholder="">
+            </label>
+            <label>Upload Audio:<br />
+               <input type='file' accept="audio/*" placeholder="" class="song-audio">
+            </label>
+            <button type="submit">Upload Song</button>
+        </form>
+   </div> -->
+
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="index.js"></script>
+</body>
+</html>
